@@ -4,7 +4,9 @@ from .models import Question, Score, Prize
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'question',)
+    list_display = ('id', 'question', 'correct_answer',)
+    search_fields = ['question']
+    list_per_page = 15
 
 
 @admin.register(Score)
@@ -14,4 +16,4 @@ class QuestionAdmin(admin.ModelAdmin):
 
 @admin.register(Prize)
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'amount',)
+    list_display = ('amount', 'id',)

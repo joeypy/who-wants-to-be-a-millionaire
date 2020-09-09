@@ -22,6 +22,8 @@ class Question(models.Model):
         verbose_name = 'Pregunta'
         verbose_name_plural = 'Preguntas'
 
+    def __str__(self):
+        return self.question
 
 class Score(models.Model):
     user = models.ForeignKey(to=User, on_delete=models.CASCADE, verbose_name="Usuario")
@@ -42,6 +44,9 @@ class Score(models.Model):
         verbose_name = 'Puntuación'
         verbose_name_plural = 'Puntuaciones'
 
+    def __str__(self):
+        return str(self.score)
+
 
 class Prize(models.Model):
     amount = models.IntegerField(verbose_name="Monto", null=False, blank=False)
@@ -50,3 +55,6 @@ class Prize(models.Model):
         ordering = ['id']
         verbose_name = 'Premio'
         verbose_name_plural = 'Premios'
+
+    def __str__(self):
+        return str(self.amount)
