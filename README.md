@@ -1,1 +1,20 @@
-"# ≦ui俷 Quiere Ser Millonario?" 
+# 驴Qui茅n Quiere Ser Millonario?
+
+## Caracteristicas:
+
+- Autenticaci贸n y Registro de Usuarios
+- Registro obligatorio para poder jugar
+- Historico de m谩ximo puntaje de todos los jugadores
+- Tiempo de duraci贸n de la partida y comodines utilizados
+- 15 preguntas, 4 opciones por pregunta y 3 comodines
+- Importar y exportar las preguntas y puntuaci贸n
+
+## Requerimientos:
+
+- Debe tener instalado la librer铆a pipenv para poder ejecutar el proyecto
+
+## Instalaci贸n:
+
+1. pipenv install (instala el entorno virtual y los paquetes necesarios)
+2. pipenv run python manage.py runserver (Pone en marcha el servidor)
+3. A jugar!
