@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models import Manager
 
 
 class Question(models.Model):
@@ -24,6 +25,7 @@ class Question(models.Model):
 
     def __str__(self):
         return self.question
+
 
 class Score(models.Model):
     user = models.ForeignKey(to=User, on_delete=models.CASCADE, verbose_name="Usuario")
